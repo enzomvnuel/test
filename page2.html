@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Women - Enzo Perfumery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Shop Item Styles */
+        .item-img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            margin-bottom: 10px;
+            filter: grayscale(0%);
+            transition: filter 0.3s ease;
+        }
+        .item-img:hover {
+            filter: grayscale(100%);
+        }
+        .item-details {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .item-details .item-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .item-details .item-price {
+            font-size: 1.1rem;
+            color: #007bff;
+        }
+
+        /* Responsive adjustments for shop items */
+        @media (max-width: 767.98px) {
+            .item-img {
+                height: 250px;
+            }
+        }
+        @media (max-width: 575.98px) {
+            .item-img {
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-12 col-md-3 col-lg-2 p-0">
+                <div class="sidebar d-flex flex-column">
+                    <div class="sidebar-header mb-auto">
+<img src="https://res.cloudinary.com/dtjjgiitl/image/upload/q_auto:good,f_auto,fl_progressive/v1751891140/wlcjvrnyb0nqial5rj35.jpg" alt="Enzo Perfumery Logo" class="sidebar-logo mb-3">
+                        <h3 class="fw-bold">ENZO PERFUMERY</h3>
+                    </div>
+                    <nav class="nav flex-column">
+                        <a class="nav-link" href="home.html">Scents</a>
+                        <a class="nav-link" href="about.html">About Me</a>
+                        <a class="nav-link" href="page1.html">Shop Men</a>
+                        <a class="nav-link active" href="page2.html">Shop Women</a>
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </nav>
+                    <div class="mt-auto">
+                        <a href="home.html" class="btn btn-outline-light back-btn">← BACK</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-9 col-lg-10">
+                <section id="shop-items" class="main-content container my-5">
+                    <h2 class="text-center mb-5">FOR WOMEN</h2>
+                    <div class="row g-4">
+                        <div class="col-md-4 col-sm-6">
+                            <a href="women-item-1.html">
+                                <img src="https://philregalo.com/cdn/shop/products/n-5-eau-de-parfum-spray-3-4fl-oz--packshot-default-125530-8833876492318.jpg?v=1634805457" class="item-img" alt="Item 1">
+                            </a>
+                            <div class="item-details">
+                                <h4 class="item-title">Chanel No. 5</h4>
+                                <p class="item-price">₱5,000.00</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <a href="women-item-2.html">
+                                <img src="https://rustans-thebeautysource.com/en/wp-content/uploads/2022/12/1511153.jpg" class="item-img" alt="Item 2">
+                            </a>
+                            <div class="item-details">
+                                <h4 class="item-title">Christian Dior J'adore</h4>
+                                <p class="item-price">₱9,000.00</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <a href="women-item-3.html">
+                                <img src="https://gordonsdirect.com/cdn/shop/products/black-opium.jpg?v=1623852940" class="item-img" alt="Item 3">
+                            </a>
+                            <div class="item-details">
+                                <h4 class="item-title">Yves Saint Laurent Black Opium</h4>
+                                <p class="item-price">₱8,000.00</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <a href="women-item-4.html">
+                                <img src="https://www.scentimesmnl.com/cdn/shop/files/P_Valentino_Donna_Born_In_Roma_Intense.jpg?v=1743483219&width=1445" class="item-img" alt="Item 4">
+                            </a>
+                            <div class="item-details">
+                                <h4 class="item-title">Valentino Donna Born In Roma Intense</h4>
+                                <p class="item-price">₱4,500.00</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <a href="women-item-5.html">
+                                <img src="https://www.houseoffraser.co.uk/images/imgzoom/75/75245969_xxl.jpg" class="item-img" alt="Item 5">
+                            </a>
+                            <div class="item-details">
+                                <h4 class="item-title">Jean Paul Gaultier: Gaultier Divine Intense</h4>
+                                <p class="item-price">₱7,500.00</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <a href="women-item-6.html">
+                                <img src="https://www.scentimesmnl.com/cdn/shop/files/P_Emporio_Armni-In_Love_With_You_2ef065d6-edb7-4b8a-9937-7b8f04b6b5f8.jpg?v=1743580135&width=1445" class="item-img" alt="Item 6">
+                            </a>
+                            <div class="item-details">
+                                <h4 class="item-title">Emporio Armani In Love With You</h4>
+                                <p class="item-price">₱6,000.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="contact" class="main-content container my-5">
+                    <h2 class="text-center mb-5">CONTACT ENZO PERFUMERY</h2>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <p class="text-center lead">For inquiries, collaborations, or custom orders, please reach out:</p>
+                            <ul class="list-unstyled text-center social-links">
+                                <li><strong>Email:</strong> <a href="mailto:reyesenzomanuel@gmail.com">reyesenzomanuel@gmail.com</a></li>
+                                <li><strong>Instagram:</strong> <a href="https://www.instagram.com/enzomvnuel" target="_blank">@enzomvnuel</a></li>
+                                <li><strong>Phone:</strong> +63 977 491 0529</li>
+                            </ul>
+                            <p class="text-center mt-4">You can also fill out the form below:</p>
+                            <form>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" rows="5" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

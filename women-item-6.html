@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emporio Armani In Love With You - Enzo Perfumery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .item-detail-section {
+            padding: 40px 0;
+        }
+        .item-detail-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        .item-detail-price {
+            font-size: 1.8rem;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+        .item-detail-description {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .main-image-container {
+            width: 450px;
+            height: 450px;
+            overflow: hidden;
+            margin: 0 auto 20px;
+            border: 1px solid #ddd;
+            position: relative;
+        }
+        .main-image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            transition: transform 0.3s ease-in-out;
+            display: block;
+        }
+        .main-image-container:hover .main-image {
+            transform: scale(1.5);
+            transform-origin: center center;
+            cursor: zoom-in;
+        }
+        .thumbnails-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+        .thumbnail {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: border-color 0.2s ease, opacity 0.2s ease;
+            opacity: 0.7;
+        }
+        .thumbnail:hover {
+            opacity: 1;
+        }
+        .thumbnail.active {
+            border-color: #007bff;
+            opacity: 1;
+        }
+
+        @media (max-width: 767.98px) {
+            .main-image-container {
+                width: 300px;
+                height: 300px;
+            }
+            .thumbnail {
+                width: 70px;
+                height: 70px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-12 col-md-3 col-lg-2 p-0">
+                <div class="sidebar d-flex flex-column">
+                    <div class="sidebar-header mb-auto">
+<img src="https://res.cloudinary.com/dtjjgiitl/image/upload/q_auto:good,f_auto,fl_progressive/v1751891140/wlcjvrnyb0nqial5rj35.jpg" alt="Enzo Perfumery Logo" class="sidebar-logo mb-3">
+                        <h3 class="fw-bold">ENZO PERFUMERY</h3>
+                    </div>
+                    <nav class="nav flex-column">
+                        <a class="nav-link" href="home.html">Scents</a>
+                        <a class="nav-link" href="about.html">About Me</a>
+                        <a class="nav-link" href="page1.html">Shop Men</a>
+                        <a class="nav-link active" href="page2.html">Shop Women</a>
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </nav>
+                    <div class="mt-auto">
+                        <a href="page2.html" class="btn btn-outline-light back-btn">← BACK TO SHOP WOMEN</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-9 col-lg-10">
+                <section id="item-detail" class="main-content container my-5 item-detail-section">
+                    <div class="row">
+                        <div class="col-md-6 d-flex flex-column align-items-center">
+                            <div class="main-image-container">
+                                <img id="mainProductImage" src="https://www.scentimesmnl.com/cdn/shop/files/P_Emporio_Armni-In_Love_With_You_2ef065d6-edb7-4b8a-9937-7b8f04b6b5f8.jpg?v=1743580135&width=1445" class="main-image" alt="Emporio Armani In Love With You">
+                            </div>
+                            <div class="thumbnails-container">
+                                <img src="https://www.scentimesmnl.com/cdn/shop/files/P_Emporio_Armni-In_Love_With_You_2ef065d6-edb7-4b8a-9937-7b8f04b6b5f8.jpg?v=1743580135&width=1445" class="thumbnail active" onclick="changeMainImage(this)" alt="Emporio Armani In Love With You View 1">
+                                <img src="https://pinoyfragrance.com/cdn/shop/files/Giorgio-Armani-Emporio-Armani-In-Love-With-You-Eau-De-Parfum-100ml.webp?v=1718724019" class="thumbnail" onclick="changeMainImage(this)" alt="Emporio Armani In Love With You View 2">
+                                <img src="https://www.scentsangel.com/cdn/shop/files/3614272225671NOTES.png?v=1730391876&width=1946" class="thumbnail" onclick="changeMainImage(this)" alt="Emporio Armani In Love With You View 3">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h1 class="item-detail-title">Emporio Armani In Love With You</h1>
+                            <p class="item-detail-price">₱6,000.00</p>
+                            <div class="item-detail-description">
+                                <p>Emporio Armani In Love With You is a vibrant floral fruity fragrance for women, launched in 2019. This charming scent captures the essence of deep affection and joyful passion, designed to be a declaration of love.</p>
+                                <p>It features a modern and exciting blend of notes, creating an aroma that is both playful and profoundly romantic.</p>
+                                <p><strong>Top notes:</strong> Raspberry, Black Cherry, Blackcurrant</p>
+                                <p><strong>Middle notes:</strong> Rose, Jasmine, Artemisia</p>
+                                <p><strong>Base notes:</strong> Vanilla, Patchouli</p>
+                                <p>In Love With You is a wonderfully optimistic and captivating fragrance, perfect for daily wear or special moments, expressing warmth and connection.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="contact" class="main-content container my-5">
+                    <h2 class="text-center mb-5">CONTACT ENZO PERFUMERY</h2>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <p class="text-center lead">For inquiries, collaborations, or custom orders, please reach out:</p>
+                            <ul class="list-unstyled text-center social-links">
+                                <li><strong>Email:</strong> <a href="mailto:reyesenzomanuel@gmail.com">reyesenzomanuel@gmail.com</a></li>
+                                <li><strong>Instagram:</strong> <a href="https://www.instagram.com/enzomvnuel" target="_blank">@enzomvnuel</a></li>
+                                <li><strong>Phone:</strong> +63 977 491 0529</li>
+                            </ul>
+                            <p class="text-center mt-4">You can also fill out the form below:</p>
+                            <form>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" rows="5" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function changeMainImage(thumbnail) {
+            const mainProductImage = document.getElementById('mainProductImage');
+            mainProductImage.src = thumbnail.src;
+
+            const thumbnails = document.querySelectorAll('.thumbnail');
+            thumbnails.forEach(thumb => {
+                thumb.classList.remove('active');
+            });
+
+            thumbnail.classList.add('active');
+        }
+    </script>
+</body>
+</html>

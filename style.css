@@ -1,0 +1,415 @@
+/* --- Global Styles --- */
+body {
+    background-color: #f5f5f5;
+    color: #343a40;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* --- Hero Section --- */
+.hero {
+    background: url('https://images.unsplash.com/photo-1618826416491-f5f8aef5cf4e') no-repeat center center/cover;
+}
+
+h1, .lead {
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    letter-spacing: 0.25rem;
+    color: #212529;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.display-1 {
+    font-size: 5.5rem;
+    margin-bottom: 1rem;
+}
+
+.lead {
+    font-size: 1.05rem;
+    font-weight: 400;
+    max-width: 700px;
+    margin: 0 auto 2rem auto;
+}
+
+/* --- Buttons --- */
+.btn-outline-light {
+    border: 1px solid #6c757d;
+    color: #6c757d;
+    border-radius: 3px;
+    padding: 12px 45px;
+    letter-spacing: 0.15rem;
+    transition: all 0.3s ease-in-out;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.btn-outline-light:hover {
+    background-color: #6c757d;
+    color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 3px;
+    padding: 12px 20px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.25);
+}
+
+
+/* --- Section Headings (h2) --- */
+h2 {
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    border-bottom: 2px solid #ced4da;
+    padding-bottom: 18px;
+    margin-bottom: 3rem;
+    color: #343a40;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* --- Main Content Area --- */
+.main-content {
+    background-color: #ffffff;
+    padding: 60px;
+    border: 1px solid #e9ecef;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* --- Image Styles (for shop listing pages) --- */
+.item-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    filter: grayscale(0%);
+    transition: filter 0.3s ease;
+}
+.item-img:hover {
+    filter: grayscale(100%);
+}
+.item-details {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+.item-details .item-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.item-details .item-price {
+    font-size: 1.1rem;
+    color: #007bff;
+}
+
+/* --- General Image Styles (for product detail pages) --- */
+img {
+    filter: none;
+    transition: all 0.4s ease;
+    border: 1px solid #dee2e6;
+    border-radius: 3px;
+    display: block;
+}
+
+img:hover {
+    transform: scale(1.02);
+    filter: brightness(1.05) contrast(1.05);
+    border-color: #adb5bd;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Sidebar Styles --- */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: inherit;
+    background-color: #ffffff;
+    padding: 40px;
+    border-right: 1px solid #e9ecef;
+    text-align: left;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.03);
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+.sidebar-header {
+    margin-bottom: 40px;
+    padding-top: 15px; /* Reduced padding-top to move it up slightly */
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+/* Sidebar Logo Styling (Universal) */
+.sidebar-logo {
+    max-width: 100px; /* Made a little larger */
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 0;
+    box-sizing: border-box;
+    border: none;
+    object-fit: contain;
+    transition: none;
+}
+
+/* Ensure no hover effects specifically on the logo if it inherits from general img:hover */
+.sidebar-logo:hover {
+    transform: none;
+    filter: none;
+    border-color: transparent;
+    box-shadow: none;
+}
+
+
+.sidebar-header h3 {
+    letter-spacing: 0.15rem;
+    font-size: 1.3rem;
+    color: #212529;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.sidebar .nav {
+    flex-grow: 1;
+}
+
+.sidebar .nav-link {
+    color: #495057;
+    letter-spacing: 0.1rem;
+    padding: 12px 0;
+    transition: color 0.3s ease, transform 0.2s ease;
+    font-size: 0.95rem;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(222, 226, 230, 0.5);
+    text-transform: uppercase;
+}
+
+.sidebar .nav-link:last-child {
+    border-bottom: none;
+}
+
+.sidebar .nav-link:hover {
+    color: #007bff;
+    transform: translateX(5px);
+}
+
+.sidebar .nav-link.active {
+    color: #007bff;
+    font-weight: 700;
+}
+
+.sidebar .back-btn {
+    width: 100%;
+    margin-top: auto;
+    padding: 12px 10px;
+    border: 1px solid #adb5bd;
+    color: #495057;
+    background-color: transparent;
+    border-radius: 3px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.sidebar .back-btn:hover {
+    background-color: #495057;
+    color: #ffffff;
+    border-color: #495057;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Contact Section Adjustments --- */
+.social-links li {
+    margin-bottom: 10px;
+}
+
+.social-links a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Form elements */
+.form-label {
+    font-weight: 600;
+    color: #495057;
+    margin-bottom: 8px;
+}
+
+.form-control {
+    border-radius: 3px;
+    border: 1px solid #ced4da;
+    padding: 10px 15px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-control:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    outline: 0;
+}
+
+/* --- Responsive Adjustments --- */
+
+/* Adjustments for the main-image-container on product detail pages */
+.main-image-container {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    margin: 0 auto 20px;
+    border: 1px solid #ddd;
+    position: relative;
+}
+
+.main-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease-in-out;
+    display: block;
+}
+
+/* Adjustments for thumbnails container on product detail pages */
+.thumbnails-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.thumbnail {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border-color 0.2s ease, opacity 0.2s ease;
+    opacity: 0.7;
+}
+
+/* Media queries for tablet and mobile */
+@media (max-width: 991.98px) {
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        border-right: none;
+        border-bottom: 1px solid #e9ecef;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+        text-align: center;
+    }
+
+    .sidebar-header {
+        margin-bottom: 20px;
+    }
+
+    .sidebar .nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    .sidebar .nav-link {
+        padding: 8px 15px;
+        border-bottom: none;
+    }
+
+    .sidebar .back-btn {
+        margin-top: 15px;
+        width: auto;
+        max-width: 250px;
+    }
+
+    .col-md-9.offset-md-3,
+    .col-lg-10.offset-lg-2 {
+        width: 100%;
+        margin-left: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .main-content {
+        padding: 30px;
+    }
+
+    .item-detail-title {
+        font-size: 2rem;
+    }
+
+    .item-detail-price {
+        font-size: 1.5rem;
+    }
+
+    .item-detail-description {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .display-1 {
+        font-size: 3.5rem;
+    }
+
+    .lead {
+        font-size: 0.9rem;
+    }
+
+    .main-content {
+        padding: 20px;
+    }
+
+    .main-image-container {
+        max-width: 300px;
+    }
+
+    .thumbnail {
+        width: 60px;
+        height: 60px;
+    }
+
+    .sidebar .nav {
+        flex-direction: column;
+    }
+    .sidebar .nav-link {
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(222, 226, 230, 0.5);
+    }
+    .sidebar .nav-link:last-child {
+        border-bottom: none;
+    }
+    .sidebar-logo {
+        max-width: 80px; /* Made a little larger for mobile too */
+    }
+}

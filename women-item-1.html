@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chanel No. 5 - Enzo Perfumery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .item-detail-section {
+            padding: 40px 0;
+        }
+        .item-detail-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        .item-detail-price {
+            font-size: 1.8rem;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+        .item-detail-description {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .main-image-container {
+            width: 450px;
+            height: 450px;
+            overflow: hidden;
+            margin: 0 auto 20px;
+            border: 1px solid #ddd;
+            position: relative;
+        }
+        .main-image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            transition: transform 0.3s ease-in-out;
+            display: block;
+        }
+        .main-image-container:hover .main-image {
+            transform: scale(1.5);
+            transform-origin: center center;
+            cursor: zoom-in;
+        }
+        .thumbnails-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+        .thumbnail {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: border-color 0.2s ease, opacity 0.2s ease;
+            opacity: 0.7;
+        }
+        .thumbnail:hover {
+            opacity: 1;
+        }
+        .thumbnail.active {
+            border-color: #007bff;
+            opacity: 1;
+        }
+
+        @media (max-width: 767.98px) {
+            .main-image-container {
+                width: 300px;
+                height: 300px;
+            }
+            .thumbnail {
+                width: 70px;
+                height: 70px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-12 col-md-3 col-lg-2 p-0">
+                <div class="sidebar d-flex flex-column">
+                    <div class="sidebar-header mb-auto">
+<img src="https://res.cloudinary.com/dtjjgiitl/image/upload/q_auto:good,f_auto,fl_progressive/v1751891140/wlcjvrnyb0nqial5rj35.jpg" alt="Enzo Perfumery Logo" class="sidebar-logo mb-3">
+                        <h3 class="fw-bold">ENZO PERFUMERY</h3>
+                    </div>
+                    <nav class="nav flex-column">
+                        <a class="nav-link" href="home.html">Scents</a>
+                        <a class="nav-link" href="about.html">About Me</a>
+                        <a class="nav-link" href="page1.html">Shop Men</a>
+                        <a class="nav-link active" href="page2.html">Shop Women</a>
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </nav>
+                    <div class="mt-auto">
+                        <a href="page2.html" class="btn btn-outline-light back-btn">← BACK TO SHOP WOMEN</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-9 col-lg-10">
+                <section id="item-detail" class="main-content container my-5 item-detail-section">
+                    <div class="row">
+                        <div class="col-md-6 d-flex flex-column align-items-center">
+                            <div class="main-image-container">
+                                <img id="mainProductImage" src="https://philregalo.com/cdn/shop/products/n-5-eau-de-parfum-spray-3-4fl-oz--packshot-default-125530-8833876492318.jpg?v=1634805457" class="main-image" alt="Chanel No. 5">
+                            </div>
+                            <div class="thumbnails-container">
+                                <img src="https://philregalo.com/cdn/shop/products/n-5-eau-de-parfum-spray-3-4fl-oz--packshot-default-125530-8833876492318.jpg?v=1634805457" class="thumbnail active" onclick="changeMainImage(this)" alt="Chanel No. 5 View 1">
+                                <img src="https://www.perfumenz.co.nz/cdn/shop/files/chanel-no5-limited-edition_700x700.png?v=1724366690" class="thumbnail" onclick="changeMainImage(this)" alt="Chanel No. 5 View 2">
+                                <img src="https://www.myperfumeshop.com.au/cdn/shop/files/chanel-n05-edt-perfume-cologne-827453.jpg?v=1725093728&width=1200" class="thumbnail" onclick="changeMainImage(this)" alt="Chanel No. 5 View 3">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h1 class="item-detail-title">Chanel No. 5</h1>
+                            <p class="item-detail-price">₱5,000.00</p>
+                            <div class="item-detail-description">
+                                <p>Chanel No. 5 is an iconic floral aldehyde fragrance for women, first launched in 1921. It's a timeless and elegant scent, celebrated worldwide for its complex and harmonious composition. This perfume embodies sophistication and enduring femininity.</p>
+                                <p>It features a bouquet of flowers blended with aldehydes, giving it its unique sparkling quality.</p>
+                                <p><strong>Top notes:</strong> Aldehydes, Ylang-Ylang, Neroli, Bergamot, Peach</p>
+                                <p><strong>Middle notes:</strong> Iris, Jasmine, Rose, Lily-of-the-Valley</p>
+                                <p><strong>Base notes:</strong> Sandalwood, Vanilla, Oakmoss, Vetiver, Patchouli</p>
+                                <p>Chanel No. 5 is a versatile fragrance suitable for any occasion, leaving a classic and memorable impression.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="contact" class="main-content container my-5">
+                    <h2 class="text-center mb-5">CONTACT ENZO PERFUMERY</h2>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <p class="text-center lead">For inquiries, collaborations, or custom orders, please reach out:</p>
+                            <ul class="list-unstyled text-center social-links">
+                                <li><strong>Email:</strong> <a href="mailto:reyesenzomanuel@gmail.com">reyesenzomanuel@gmail.com</a></li>
+                                <li><strong>Instagram:</strong> <a href="https://www.instagram.com/enzomvnuel" target="_blank">@enzomvnuel</a></li>
+                                <li><strong>Phone:</strong> +63 977 491 0529</li>
+                            </ul>
+                            <p class="text-center mt-4">You can also fill out the form below:</p>
+                            <form>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" rows="5" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function changeMainImage(thumbnail) {
+            const mainProductImage = document.getElementById('mainProductImage');
+            mainProductImage.src = thumbnail.src;
+
+            const thumbnails = document.querySelectorAll('.thumbnail');
+            thumbnails.forEach(thumb => {
+                thumb.classList.remove('active');
+            });
+
+            thumbnail.classList.add('active');
+        }
+    </script>
+</body>
+</html>

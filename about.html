@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Enzo Perfumery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Styles for the main content area logo (made a little larger) */
+        .main-page-logo {
+            max-width: 220px; /* Increased from 180px */
+            height: auto;
+            display: block;
+            margin: 0 auto 2rem auto; /* Centered, with space below */
+            border: none; /* Ensure no border */
+            filter: none; /* Ensure no filter */
+            transition: none; /* No hover effects */
+        }
+        .main-page-logo:hover {
+            transform: none; /* No scaling on hover */
+            filter: none; /* No brightness/contrast on hover */
+            border-color: transparent; /* No border change on hover */
+            box-shadow: none; /* No shadow on hover */
+        }
+
+        /* Existing styles for about page images and text */
+        .about-content img {
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 15px;
+            border-radius: 50%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .about-content p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 15px;
+            text-transform: none;
+        }
+        .about-content h3 {
+            font-weight: bold;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: #333333;
+            letter-spacing: 0.1rem;
+        }
+        .owner-info {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .owner-info p {
+            margin-bottom: 5px;
+            font-size: 1rem;
+        }
+        .owner-info p:last-child {
+            margin-bottom: 0;
+        }
+        .social-links li {
+            margin-bottom: 10px;
+        }
+        .social-links a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive adjustments for the main-page-logo */
+        @media (max-width: 767.98px) {
+            .main-page-logo {
+                max-width: 150px; /* Increased from 120px for mobile */
+                margin: 0 auto 1.5rem auto; /* Adjust margin for mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-12 col-md-3 col-lg-2 p-0">
+                <div class="sidebar d-flex flex-column">
+                    <div class="sidebar-header mb-auto">
+                        <img src="https://res.cloudinary.com/dtjjgiitl/image/upload/q_auto:good,f_auto,fl_progressive/v1751891140/wlcjvrnyb0nqial5rj35.jpg" alt="Enzo Perfumery Logo" class="sidebar-logo mb-3">
+                        <h3 class="fw-bold">ENZO PERFUMERY</h3>
+                    </div>
+                    <nav class="nav flex-column">
+                        <a class="nav-link" href="home.html">Scents</a>
+                        <a class="nav-link active" href="about.html">About Me</a>
+                        <a class="nav-link" href="page1.html">Shop Men</a>
+                        <a class="nav-link" href="page2.html">Shop Women</a>
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </nav>
+                    <div class="mt-auto">
+                        <a href="home.html" class="btn btn-outline-light back-btn">← BACK</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-9 col-lg-10">
+                <section id="about-section" class="main-content container my-5">
+                    <img src="https://res.cloudinary.com/dtjjgiitl/image/upload/q_auto:good,f_auto,fl_progressive/v1751891140/wlcjvrnyb0nqial5rj35.jpg" alt="Enzo Perfumery Logo" class="main-page-logo">
+
+                    <h2 class="text-center mb-5">ABOUT ENZO PERFUMERY</h2>
+                    <div class="row justify-content-center about-content">
+                        <div class="col-lg-10 text-center">
+                            <img src="https://avatars.githubusercontent.com/u/211105374?v=4" alt="Enzo Manuel Reyes" class="img-fluid">
+                            <div class="owner-info">
+                                <p><strong>THE OWNER</strong></p>
+                                <p>Enzo Manuel Reyes</p>
+                                <p>19 years old</p>
+                                <p>Bachelor of Science in Information Technology with specialization in Cybersecurity</p>
+                                <p>Far Eastern University Institute of Technology</p>
+                            </div>
+                            <p class="mt-4 text-start">
+                                Welcome to Enzo Perfumery, your destination for a curated selection of the finest and most captivating fragrances.
+                                We are passionate about bringing you exceptional perfumes from renowned houses and hidden gems alike,
+                                ensuring every bottle offers a unique and memorable olfactory experience. Our mission is to connect you
+                                with scents that truly resonate with your personal style and preferences.
+                            </p>
+                            <h3 class="mt-5 text-start">OUR HISTORY</h3>
+                            <p class="text-start">
+                                Enzo Perfumery was established in 2025 by Enzo Manuel Reyes, a dedicated perfume enthusiast
+                                with a deep appreciation for the art of fragrance. What began as a personal quest to discover and share
+                                the best perfumes quickly evolved into Enzo Perfumery, a trusted platform for fragrance lovers.
+                                Our journey is driven by a commitment to offering quality and variety, bringing cherished scents directly to you.
+                            </p>
+                            <h3 class="text-start">WHAT MAKES US UNIQUE</h3>
+                            <p class="text-start">
+                                At Enzo Perfumery, we stand out through our carefully selected collection. We don't create perfumes;
+                                instead, we meticulously choose our favorite fragrances from various brands, ensuring that each
+                                product meets our high standards for quality, longevity, and allure. Our expertise lies in curating
+                                a diverse range of scents that cater to different tastes and occasions, providing you with a
+                                personalized selection. We are committed to authenticity, sourcing only genuine products
+                                to guarantee a premium experience.
+                            </p>
+                            <p class="text-center mt-4">
+                                Our dedication to providing an exceptional customer experience is paramount. We believe in helping you
+                                find the perfect scent that complements your individuality, offering a seamless and enjoyable shopping journey.
+                            </p>
+                            <p class="text-center mt-4">
+                                Experience the world of exceptional fragrances with Enzo Perfumery – where your perfect scent awaits.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

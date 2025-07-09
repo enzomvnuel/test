@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emporio Armani Stronger With You Parfum - Enzo Perfumery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* General product detail section styling */
+        .item-detail-section {
+            padding: 40px 0;
+        }
+        .item-detail-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        .item-detail-price {
+            font-size: 1.8rem;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+        .item-detail-description {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        /* Main product image container and image styling */
+        .main-image-container {
+            width: 450px;
+            height: 450px;
+            overflow: hidden;
+            margin: 0 auto 20px;
+            border: 1px solid #ddd;
+            position: relative;
+        }
+        .main-image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* Ensures the whole image is visible within the container */
+            transition: transform 0.3s ease-in-out; /* Smooth zoom transition */
+            display: block;
+        }
+        .main-image-container:hover .main-image {
+            transform: scale(1.5); /* Zooms in on hover */
+            transform-origin: center center;
+            cursor: zoom-in;
+        }
+
+        /* Thumbnail image container and individual thumbnail styling */
+        .thumbnails-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+        .thumbnail {
+            width: 100px;
+            height: 100px;
+            object-fit: cover; /* Fills the thumbnail area, cropping if necessary */
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: border-color 0.2s ease, opacity 0.2s ease, transform 0.2s ease; /* Added transform to transition */
+            opacity: 0.7;
+        }
+        .thumbnail:hover {
+            opacity: 1;
+            transform: scale(1.1); /* Zoom effect on thumbnail hover */
+            border-color: #007bff; /* Highlight on hover */
+        }
+        .thumbnail.active {
+            border-color: #007bff; /* Highlight active thumbnail */
+            opacity: 1;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 767.98px) {
+            .main-image-container {
+                width: 300px;
+                height: 300px;
+            }
+            .thumbnail {
+                width: 70px;
+                height: 70px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-12 col-md-3 col-lg-2 p-0">
+                <div class="sidebar d-flex flex-column">
+                    <div class="sidebar-header mb-auto">
+                        <img src="https://res.cloudinary.com/dtjjgiitl/image/upload/q_auto:good,f_auto,fl_progressive/v1751891140/wlcjvrnyb0nqial5rj35.jpg" alt="Enzo Perfumery Logo" class="sidebar-logo mb-3">
+                        <h3 class="fw-bold">ENZO PERFUMERY</h3>
+                    </div>
+                    <nav class="nav flex-column">
+                        <a class="nav-link" href="home.html">Scents</a>
+                        <a class="nav-link" href="about.html">About Me</a>
+                        <a class="nav-link active" href="page1.html">Shop Men</a> <a class="nav-link" href="page2.html">Shop Women</a>
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </nav>
+                    <div class="mt-auto">
+                        <a href="page1.html" class="btn btn-outline-light back-btn">← BACK TO SHOP MEN</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-9 col-lg-10">
+                <section id="item-detail" class="main-content container my-5 item-detail-section">
+                    <div class="row">
+                        <div class="col-md-6 d-flex flex-column align-items-center">
+                            <div class="main-image-container">
+                                <img id="mainProductImage" src="https://gordonsdirect.com/cdn/shop/files/3614274219548-5.gif?v=1738921159" class="main-image" alt="Emporio Armani Stronger With You Parfum">
+                            </div>
+                            <div class="thumbnails-container">
+				<img src="https://gordonsdirect.com/cdn/shop/files/3614274219548-5.gif?v=1738921159" class="thumbnail active" onclick="changeMainImage(this)" alt="Emporio Armani Stronger With You Absolutely View 1">
+				<img src="https://perfumestore.ph/wp-content/uploads/2025/05/Giorgio-Armani-Emporio-Armani-Stronger-With-You-Parfum-For-Men.jpg" class="thumbnail" onclick="changeMainImage(this)" alt="Emporio Armani Stronger With You Absolutely View 2">
+				<img src="https://www.armani-beauty.ca/dw/image/v2/AAFM_PRD/on/demandware.static/-/Sites-armani-ca-Library/default/dw9357b162/images/pdp/ww-00911-arm/ww-00911-arm-video-packshot-thumbnail.jpg?sw=500&sh=500&sm=cut&q=100" class="thumbnail" onclick="changeMainImage(this)" alt="Emporio Armani Stronger With You Absolutely View 3">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h1 class="item-detail-title">Emporio Armani Stronger With You Parfum</h1>
+                            <p class="item-detail-price">₱6,500.00</p> <div class="item-detail-description">
+                                <p>Stronger With You Parfum by Emporio Armani is a powerful and highly addictive amber fougère woody fragrance for men, launched in 2023. This intense and sophisticated scent reimagines the original Stronger With You DNA with an elevated and deeper masculinity, capturing the essence of unwavering connection and passionate love.</p>
+                                <p>It opens with a fresh burst that quickly transitions into a rich, warm, and inviting heart, settling into a long-lasting and profoundly sensual base.</p>
+                                <p><strong>Top notes:</strong> Lavender, Black Pepper</p>
+                                <p><strong>Middle notes:</strong> Chestnut, Vanilla, Amberwood</p>
+                                <p><strong>Base notes:</strong> Guaiac Wood, Cashmeran</p>
+                                <p>Stronger With You Parfum is an exceptional choice for cooler weather, evening wear, and special occasions where you want to make a lasting impression. Its intense longevity and potent sillage ensure you'll be noticed.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="contact" class="main-content container my-5">
+                    <h2 class="text-center mb-5">CONTACT ENZO PERFUMERY</h2>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <p class="text-center lead">For inquiries, collaborations, or custom orders, please reach out:</p>
+                            <ul class="list-unstyled text-center social-links">
+                                <li><strong>Email:</strong> <a href="mailto:reyesenzomanuel@gmail.com">reyesenzomanuel@gmail.com</a></li>
+                                <li><strong>Instagram:</strong> <a href="https://www.instagram.com/enzomvnuel" target="_blank">@enzomvnuel</a></li>
+                                <li><strong>Phone:</strong> +63 977 491 0529</li>
+                            </ul>
+                            <p class="text-center mt-4">You can also fill out the form below:</p>
+                            <form>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" rows="5" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function changeMainImage(thumbnail) {
+            const mainProductImage = document.getElementById('mainProductImage');
+            mainProductImage.src = thumbnail.src;
+
+            // Remove 'active' class from all thumbnails and add to the clicked one
+            const thumbnails = document.querySelectorAll('.thumbnail');
+            thumbnails.forEach(thumb => {
+                thumb.classList.remove('active');
+            });
+            thumbnail.classList.add('active');
+        }
+    </script>
+</body>
+</html>

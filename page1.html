@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Men - Enzo Perfumery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Shop Item Styles */
+        .item-img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            margin-bottom: 10px;
+            filter: grayscale(0%);
+            transition: filter 0.3s ease;
+        }
+        .item-img:hover {
+            filter: grayscale(100%);
+        }
+        .item-details {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .item-details .item-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .item-details .item-price {
+            font-size: 1.1rem;
+            color: #007bff;
+        }
+
+        /* Responsive adjustments for shop items */
+        @media (max-width: 767.98px) {
+            .item-img {
+                height: 250px; /* Adjust height for smaller screens */
+            }
+        }
+        @media (max-width: 575.98px) {
+            .item-img {
+                height: 200px; /* Even smaller for very small mobiles */
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-12 col-md-3 col-lg-2 p-0">
+                <div class="sidebar d-flex flex-column">
+                    <div class="sidebar-header mb-auto">
+<img src="https://res.cloudinary.com/dtjjgiitl/image/upload/q_auto:good,f_auto,fl_progressive/v1751891140/wlcjvrnyb0nqial5rj35.jpg" alt="Enzo Perfumery Logo" class="sidebar-logo mb-3">
+                        <h3 class="fw-bold">ENZO PERFUMERY</h3>
+                    </div>
+                    <nav class="nav flex-column">
+                        <a class="nav-link" href="home.html">Scents</a>
+                        <a class="nav-link" href="about.html">About Me</a>
+                        <a class="nav-link active" href="page1.html">Shop Men</a>
+                        <a class="nav-link" href="page2.html">Shop Women</a>
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </nav>
+                    <div class="mt-auto">
+                        <a href="home.html" class="btn btn-outline-light back-btn">← BACK</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-9 col-lg-10">
+                <section id="shop-items" class="main-content container my-5">
+                    <h2 class="text-center mb-5">FOR MEN</h2>
+                    <div class="row g-4">
+                        <div class="col-md-4 col-sm-6">
+                            <a href="men-item-1.html">
+                                <img src="https://www.perfumestudiomnl.com/cdn/shop/products/image_c2a2b7d1-6bb1-4186-8905-4ba833ead6e6.jpg?v=1617461811" class="item-img" alt="Item 1">
+                            </a>
+                            <div class="item-details">
+                                <h4 class="item-title">Bleu De Chanel</h4>
+                                <p class="item-price">₱10,000.00</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <a href="men-item-2.html">
+                                <img src="https://rustans-thebeautysource.com/en/wp-content/uploads/2022/12/2272645.jpg" class="item-img" alt="Item 2">
+                            </a>
+                            <div class="item-details">
+                                <h4 class="item-title">Dior Sauvage</h4>
+                                <p class="item-price">₱6,000.00</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <a href="men-item-3.html">
+                                <img src="https://rustans-thebeautysource.com/en/wp-content/uploads/2024/09/3254397.jpg" class="item-img" alt="Item 3">
+                            </a>
+                            <div class="item-details">
+                                <h4 class="item-title">Yves Saint Laurent Y EDP</h4>
+                                <p class="item-price">₱5,000.00</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <a href="men-item-4.html">
+                                <img src="https://ifragranceofficial.com/wp-content/uploads/2023/01/rTJRtm1073334-0-global.jpeg" class="item-img" alt="Item 4">
+                            </a>
+                            <div class="item-details">
+                                <h4 class="item-title">Valentino Uomo Born In Roma Intense</h4>
+                                <p class="item-price">₱4,500.00</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <a href="men-item-5.html">
+                                <img src="https://the-fragrance-shop.imgix.net/products/62902--new--.jpg?fm=webp" class="item-img" alt="Item 5">
+                            </a>
+                            <div class="item-details">
+                                <h4 class="item-title">Jean Paul Gaultier Le Male Elixir</h4>
+                                <p class="item-price">₱7,000.00</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <a href="men-item-6.html">
+                                <img src="https://gordonsdirect.com/cdn/shop/files/3614274219548-5.gif?v=1738921159" class="item-img" alt="Item 6">
+                            </a>
+                            <div class="item-details">
+                                <h4 class="item-title">Emporio Armani Stronger With You Parfum</h4>
+                                <p class="item-price">₱6,500.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="contact" class="main-content container my-5">
+                    <h2 class="text-center mb-5">CONTACT ENZO PERFUMERY</h2>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <p class="text-center lead">For inquiries, collaborations, or custom orders, please reach out:</p>
+                            <ul class="list-unstyled text-center social-links">
+                                <li><strong>Email:</strong> <a href="mailto:reyesenzomanuel@gmail.com">reyesenzomanuel@gmail.com</a></li>
+                                <li><strong>Instagram:</strong> <a href="https://www.instagram.com/enzomvnuel" target="_blank">@enzomvnuel</a></li>
+                                <li><strong>Phone:</strong> +63 977 491 0529</li>
+                            </ul>
+                            <p class="text-center mt-4">You can also fill out the form below:</p>
+                            <form>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" rows="5" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
